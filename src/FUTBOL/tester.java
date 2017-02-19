@@ -30,9 +30,7 @@ public class tester {
                       "1)crear Jugador" + "\n"
                     + "2) mostrar datos" + "\n"
                     + "3) ordenar por gol" + "\n"
-                    + "4) dar de baja jugador" + "\n"
-                    + "5) mejor delantero" + "\n"
-                    + "6) Traspasar de equipo" + "\n"
+                    
                     + "7) dar de alta" + "\n"
                     + "8) salir" + "\n");
             opcion = le.nextInt();
@@ -59,22 +57,7 @@ public class tester {
                 case 3:
                    eq1.OrdenarGoles();
                     break;
-                case 4:
-                    System.out.println("introduce idJugador para eliminar ejemplo 1,2,3");
-                    cont=le.nextInt();
-                    eq1.darBaja(cont);
-                    break;
-                    
-                case 5:
-                    System.out.println(eq1.mejorDelantero()); 
-                    break;
-                case 6:
-                    System.out.println("pasar de quipo");
-                    System.out.println("introduce numero de posicion (idJugador) para eliminar");
-                    cont=le.nextInt();
-                    eq1.traspasar(listaJugadores2,cont);
-                    eq2.mostrarDatos();
-                    break;
+
                 case 7:
                     
                     eq1.darAlta(idJugador, ju1);
